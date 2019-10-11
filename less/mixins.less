@@ -1,1 +1,25 @@
 // Mixins Here
+
+//parametric
+
+.buttonstyle(@back-col, @text-col, @radius, @font) {
+    background: @back-col;
+    color: @text-col;
+    border-radius: @radius;
+    font-size: @font;
+
+}
+
+//normal mixin
+
+.mixin1 {
+    width: 30%;
+}
+
+.mixin2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around
+}
