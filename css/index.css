@@ -256,6 +256,12 @@ footer {
   text-align: center;
   cursor: pointer;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #004d00;
+}
+.home .walk .walk-text .btn:hover {
+  color: #ffff00;
+}
 .home .walk-img {
   width: 46%;
   margin-left: 4%;
