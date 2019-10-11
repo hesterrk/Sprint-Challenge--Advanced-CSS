@@ -187,6 +187,12 @@ p {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .navflex {
+    font-size: 1.2rem;
+    width: 70%;
+  }
+}
 a {
   text-decoration: none;
   color: #23293B;
@@ -201,6 +207,12 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  footer {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 .home .intro h2 {
   padding: 15px;
 }
@@ -212,11 +224,22 @@ footer {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .home .space-images {
+    display: flex;
+    justify-content: center;
+  }
+}
 .home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 90%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -234,8 +257,24 @@ footer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+}
 .home .walk .walk-text {
   width: 50%;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+    padding-top: 20px;
+  }
 }
 .home .walk .walk-text h3 {
   margin-bottom: 10px;
@@ -262,12 +301,47 @@ footer {
 .home .walk .walk-text .btn:hover {
   color: #ffff00;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn {
+    width: 90%;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 .home .walk-img {
   width: 46%;
   margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .home .walk-img {
+    width: 90%;
+    padding-left: 5px;
+  }
 }
 .home .walk-img img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.blue {
+  border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .blue {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .launch {
+    display: none;
+  }
 }
