@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A fully responsive layout consists of a combination of features from fixed, adaptive and fluid together to offer a seamless experience. It allows for fluidity with items so they can grow/shrink at breakpoints depending on the device. It does not care about the browser width and only has one master layout that is loaded across different devices with different viewports. It also takes more time and effort to make. In contrast an adaptive layout means there are different layouts for different devices and not one master layout. This is a cheaper and quicker way. It depends on the browser width. Moreover, layout widths are hard coded at each media query which means it still has a certain element of fixed layout to it as it relies on predefined screen size to adapt itself. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+
+Mobile first means when we are writing our CSS, it is done so with the intention of it being for mobiles-smaller screens primarily and then as we consider larger ones we then add breakpoints to accommodate bigger screens with more features. For the media queries it uses the value: min-width. Desktop first means we starting writing our CSS for desktops first and then add media queries to make our designs suitable for smaller screen with breakpoints. We use the value: max-width. 
+
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+
+A common font size of our browsers is 16px, but this is a hard coded pixel which means if someone adjusts their settings for accessibility reasons it wont change. So if we make make it a percentage, which will change it relative to the size of the settings, yet this is still difficult as it would mean 1rem is equal to 16px, which makes it hard to calculate. Using the percentage 62.5% means that 62.5% of 16px is equal to 10px which is easy to covert our rem units into pixels. Whereby 1 rem=10px. 
+
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is simply a slightly different syntax form of CSS which has to be converted by a compiler- a program that formats the code, which then compiles it into normal CSS. It opens up more features to make our CSS more extensive and keeps our code more DRY. 
+
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+-I really like using variables and parametric mixins. The latter makes it easier and good to keep our code DRY. The concept that gives me the most trouble would probably be using the less-compiler command on the command line. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
